@@ -13,7 +13,7 @@ public class IdlParser {
 	private static final Pattern datePattern = Pattern.compile(
 			"^[0-9]{8}$");
 	private static final Pattern iinPattern = Pattern.compile(
-			"ANSI\\s+[0]*([1-9]{1}[0-9]{5})");
+			"ANSI\\s+([0-9]{6})");
 
 	// Unfortunately, the format specified in
 	// http://www.aamva.org/DL-ID-Card-Design-Standard/

@@ -18,8 +18,8 @@ public class IdlParserTest {
 		String data = new String(Files.readAllBytes(
 				Paths.get("src/test/resources/sample_idl")));
 		IdlInfo info = IdlParser.parse(data);
-		Assert.assertEquals("300011", info.iin);
-		Assert.assertEquals("DLUSA300011", info.getSummary());
+		Assert.assertEquals("030001", info.iin);
+		Assert.assertEquals("DLUSA030001", info.getSummary());
 		Map<String, String> elements = info.elements;
 		Assert.assertEquals(11, elements.size());
 		Assert.assertEquals("USA",
